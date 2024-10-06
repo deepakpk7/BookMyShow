@@ -1,5 +1,9 @@
+.nav2{
+    position: absolute;
+}
 #navbar{
     background-color: #eeeded;
+    position: absolute;
 }
 #logo{
     padding-left: 20px;
@@ -26,4 +30,14 @@
 }
 #navrow{
     padding-left: 15%;
+}
+#location{
+    position: absolute;
+    right: 10%;
+
+}
+.nav2{
+    
+    width: 100%;
+    background-color: black;
 }
