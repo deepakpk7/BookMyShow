@@ -99,6 +99,39 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+.carousel-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.movie-details {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+.movie-card {
+    padding: 10px;
+}
+.label-premiere {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+.label-exclusive {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: yellow;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+.premiers{
+    background-color: rgb(43, 49, 72);
+}
 
 @media (max-width: 576px) {
     #navbar2 {
