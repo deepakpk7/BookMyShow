@@ -39,3 +39,62 @@
     background-color: rgb(245,245,245);
     padding-top: 2%;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+ }
+ 
+ .recommended-movies {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+ }
+ 
+ .movie {
+    flex: 1;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+ }
+ 
+ .movie-title {
+    font-size: 24px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+ }
+ 
+ .movie-rating {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+ }
+ 
+ .movie-description {
+    font-size: 16px;
+    padding: 10px;
+    color: #666;
+ }
+  
+
+body {
+    padding-top: 56px;
+}
+
+
+@media (max-width: 576px) {
+    #navbar2 {
+        display: none; 
+    }
+    #myCarousel{
+        padding-top: 100px;
+    }
+    #cbutton{
+        padding-top: 100px;
+    }
+}
