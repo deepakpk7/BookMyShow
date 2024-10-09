@@ -3,162 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BookMyShow</title>
+    <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <nav id="navbar" class="navbar  bg-body-teriary fixed-top content d-none d-md-block">
+    <nav id="navbar" class="navbar bg-white fixed-top">
         <div class=" container-fluid">
-            <form class="d-flex justify-content-center" role="search" style="width: 600px;">
-                <img id="logo"  src="img/logo.png" alt=""height="55px"></a>
-                <input id="search"  class="form-control me-2" type="search" placeholder="     Search for Movies,Events,Plays,Sports and Activities" aria-label="Search">
+            <form class="d-flex justify-content-center" role="search" style="width: 600px;padding-top:10px;">
+                <img id="logo"  src="../BookMyShow/media/bookmyshow_logo.png" alt=""height="50px"></a>
+                <i id="slogo"  class="fa-solid fa-magnifying-glass" aria-hidden="false"></i>
+                <input id="search"  class="form-control me-2" type="search" placeholder="       Search for Movies,Events,Plays,Sports and Activities" aria-label="Search">
             </form>
-
-
-            
-            <div id="dropdown" class="dropdown ">            
+            <div id="location" class="dropdown ">            
                 <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Kochi
                 </a>
-                <ul class="dropdown-menu" style="width: 50vw; left: calc(60% - 35vw);">
-                    <li class="mb-3"><i id="droplogo"  class="  fa-solid fa-magnifying-glass" aria-hidden="false"></i>
-                        <input  class="form-control me-2" type="search" placeholder="     Search for Your City" aria-label="Search"></li>
-                    <li class="mb-3"><a class=" text-dark  text-decoration-none" href="#"><i class="fa-solid fa-location-dot  me-2">
-
-                    </i>Detect my location</li></a>
-                    <b class="d-flex justify-content-center mb-3">Popluar Cities</b>
-                    <div class="row">
-                        <div style="margin-left: 30px;" class="col">
-                                <p class="text-black">kochi</p>
-                            </a>
-                        </div>
-                        <div class="col">
-                                <p class="text-black">Chennai</p>
-                            </a>
-                        </div>
-                        <div class="col">
-                                <p class="text-black">Mumbai</p>
-                            </a>
-                        </div>
-                        <div class="col">
-                                <p class="text-black">Hyderabad</p>
-                            </a>
-                        </div>
-                        <div class="col">
-                                <p class="text-black">Banglore</p>
-                            </a>
-                        </div>
-
-                    </div>
-                    <b class="d-flex text-dark justify-content-center mb-3">View All Cities</b>
-                </ul>    
             </div>
 
+            <button id="login" class="btn btn-danger" type="submit">sign in</button>
 
-
-
-            <button id="sign_in" class="btn btn-danger" type="submit">Sign in</button>
-            <button id="canva" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- <div  class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hey!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-10 ">
-                        <li id="gift" class="p-2 nav-item border-top border-bottom">
-                            <a class="nav-link active" aria-current="page" href="#"><img src="img/gift.box.jpg" width="50px" alt="Profile" class="rounded-circle mb-2">Unlock special offers & great benefits <p><div class="d-flex justify-content-center"><button class="btn btn-outline-danger">Login/Register</button></div></p></span></a>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     Notifacations</a>
-                            </li>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     Your Order</a>
-                            </li>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     Stream Libray</a>
-                            </li>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     Play Credit Card</a>
-                            </li>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     Help & Support</a>
-                            </li>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     Account & Support</a>
-                            </li>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     Rewards</a>
-                            </li>
-                            <li id="order">
-                                <a class="nav-link " href=""></i>     BookAChange</a>
-                            </li>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-                        
     </nav>
-
     <nav id="navbar2" class=" second-navbar mt-5 d-none d-md-block">
         <div id="navrow" class="row container  pt-2">
-            <div class="navtext col-auto ">
+            <div class="col-auto ">
                 <p class="text-black">Movies</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Steam</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Events</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Plays</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Sports</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Activities</p>
             </div>
+
+
             <div id="navrow2" class="col-auto ms-auto">
                 <p class="text-black">ListYourShow</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Corparates</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Offers</p>
             </div>
-            <div class="navtext col-auto ">
+            <div class="col-auto">
                 <p class="text-black">Gift Cards</p>
             </div>
         </div>
     </nav>
-
-    <div class="carousel slide mt-1" data-bs-ride="carousel" id="caro">
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="img/topimg2.avif" alt="" style="width: 100%;">
-            </div>
-            <div class="carousel-item active">
-                <img src="img/topimg4.avif" alt="" style="width: 100%;">
-            </div>
-            <div class="carousel-item">
-                <img src="img/topimg3.avif" alt="" style="width: 100%;">
-            </div>
-            <div class="carousel-item">
-                <img src="img/topimg1.avif" alt="" style="width: 100%;">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#caro" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#caro" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
