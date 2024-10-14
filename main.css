@@ -39,6 +39,9 @@
     background-color: rgb(245,245,245);
     padding-top: 2%;
 }
+.nav-item{
+    padding-bottom: 10px;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -103,13 +106,34 @@ body {
     max-width: 100%;
     border-radius: 5px;
 }
-.movie-details {
+.movie-details2 {
     text-align: center;
     margin-top: 10px;
     color: white;
 }
-.movie-card {
+.movie-card2 {
     padding: 10px;
+}
+.movie-details {
+    padding: 10px;
+}
+.movie-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.movie-genre {
+    color: #6c757d;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #f8f9fa;
 }
 .label-premiere {
     position: absolute;
@@ -167,6 +191,60 @@ footer .btn-danger {
 
 footer .btn-danger:hover {
     background-color: #e04545;
+}
+
+#text1{
+    text-decoration: none;
+    color: rgb(128, 124, 124);
+}
+
+#text1:hover{
+    color: white;
+}
+.para{
+    color: rgb(128, 124, 124);
+}
+.left-line,
+.right-line {
+    border: none;
+    height: 1px;
+    background-color: #888;
+    width: 100%;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-line, .right-line {
+    flex-grow: 1; 
+    border: none;
+    border-top: 1px solid #000; 
+    margin: 0 20px; 
+}
+
+.logo {
+    max-width: 100px; /* Adjust as needed for logo size */
+}
+
+#social1{
+    background-color: #888;
+    color: rgb(45,47,48);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+#social1:hover{
+    background-color: white;
+}
+#text2{
+    color: rgb(128, 124, 124);
 }
 
 /* Responsive Styling */
